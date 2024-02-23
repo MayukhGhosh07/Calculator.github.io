@@ -96,4 +96,26 @@ body{
 
 }
 
+@media only screen and (min-width:320px) and (max-width:337px){
+    .btn{
+        height: 4rem; 
+        width: 4rem;
+
+    }
+    .display{
+        width: 16rem;
+    }
+}
+
+@media only screen and (min-width:338px) and (max-width:381px){
+    .btn{
+        height: 4.5rem; 
+        width: 4.5rem;
+
+    }
+    .display{
+        width: 18rem;
+    }
+}
+
 
