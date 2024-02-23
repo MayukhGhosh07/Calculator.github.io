@@ -13,7 +13,7 @@
          } 
         
          function operation(oper){
-            if(disp.innerHTML=="NaN" || disp.innerHTML=="undefined" ){
+            if(disp.innerHTML=="NaN" || disp.innerHTML=="undefined"){
              disp.innerHTML=""   
              disp.innerHTML=disp.innerHTML + oper
             }
@@ -37,14 +37,7 @@ function clearDisplay(){
 }         
 
 function plusMinus(){
-        if(disp.innerHTML=="NaN" || disp.innerHTML=="undefined" ){
-
-        disp.innerHTML=""
-        disp.innerHTML=`(-${disp.innerHTML})` 
-}
-else{
-disp.innerHTML=`(-${disp.innerHTML})` 
-}
+        disp.innerHTML=`(-${disp.innerHTML})`
        
     
 }
