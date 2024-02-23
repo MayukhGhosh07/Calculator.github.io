@@ -1,6 +1,6 @@
  let disp=document.querySelector(".display")
          function insertNumber(input){
-        if(disp.innerHTML=="NaN" || disp.innerHTML=="undefined" ){
+        if(disp.innerHTML=="NaN" || disp.innerHTML=="undefined" || disp.innerHTML=="0"){
             disp.innerHTML=""   
             disp.innerHTML=disp.innerHTML+input
 
@@ -37,7 +37,13 @@ function clearDisplay(){
 }         
 
 function plusMinus(){
+    if(disp.innerHTML=="NaN" || disp.innerHTML=="undefined"){
+        disp.innerHTML=""
         disp.innerHTML=`(-${disp.innerHTML})`
+
+    }
+    else{ disp.innerHTML=`(-${disp.innerHTML})`}
+       
        
     
 }
